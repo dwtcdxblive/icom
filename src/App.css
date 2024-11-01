@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+ background-image: url('./assets/fig-bg-pattern-text.png'); 
+ background-color: #F0E8DD;
+ width: 100vw;
+ height: 100vh;
+ background-size: cover;
+}
+
+.iframe{
+width: 100%;
+height: 60vh;
+}
+.icom-btn{
+  background-color: #003F8F;
+}
+
+@media (max-width: 767px) {
+  .app{
+    background-image: url('./assets/mobile.png');
+    background-size: cover;
+  }
+
+  .icom-btn{
+    font-size: .8rem;
+  }
+
+.iframe{
+  height: 25vh;
+}}
