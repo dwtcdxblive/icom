@@ -2,7 +2,8 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import './App.css';
-
+import KV from './assets/KV.png';
+import Logo from './assets/logo.png'
 function App() {
   const [iframeSrc, setIframeSrc] = useState("https://player.castr.com/live_737a2870977811ef81432b93842f0875?tracks=Floor,Arabic,English");
 
@@ -11,7 +12,15 @@ function App() {
   };
 
   return (
-    <div className='app d-flex justify-content-center align-items-center'>
+    <div className='app'>
+<nav class="navbar justify-content-around">
+    <a class="navbar-brand" href="#">
+      <img src={Logo} alt=""/>
+    </a>  
+      <a class="navbar-brand" href="#">
+      <img src={KV} alt=""/>
+    </a>
+</nav>
       <div className='container'>
         <div className='row justify-content-center'>
           <div className='col-md-12 col-sm-12'>

@@ -4,7 +4,7 @@
 }
 
 .app{
- background-image: url('./assets/fig-bg-pattern-text.png'); 
+ background-image: url('./assets/background-image.png'); 
  background-color: #F0E8DD;
  width: 100vw;
  height: 100vh;
@@ -20,15 +20,24 @@ height: 60vh;
 }
 
 @media (max-width: 767px) {
+
   .app{
-    background-image: url('./assets/mobile.png');
-    background-size: cover;
+        display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    gap: 8rem;
   }
 
   .icom-btn{
-    font-size: .8rem;
+    font-size: .6rem;
   }
 
 .iframe{
   height: 25vh;
-}}
+}
+.navbar-brand{
+  img{
+    max-width: 20rem;
+  }
+}
+}
